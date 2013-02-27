@@ -16,7 +16,7 @@
 	//////////////////////////////////////////////////////////////////////////////////
 
 	// VARs
-	$addon_name = "gs_video";
+	$addon_name = "gs_videojs";
 
 	// Sprachdateien anhaengen
 	if(TRUE == $REX['REDAXO'])
