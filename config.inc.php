@@ -27,7 +27,7 @@
 
    // VARs - ADDON
    $REX['ADDON']['name'][$page]          = 'VideoJS';
-   $REX['ADDON']['rxid'][$page]          = '1002';
+   $REX['ADDON']['rxid'][$page]          = '1052';
    $REX['ADDON']['page'][$page]          = $page;
    $REX['ADDON']['version'][$page]       = '0.9.5';
    $REX['ADDON']['author'][$page]        = 'Gilbert Seilheimer';
