@@ -1,38 +1,25 @@
-﻿# addon:video-JS de_de | de_de_utf8
+﻿# addon:fancybox de_de_utf8
 
-addon_name = Video-JS
+gs_videojs_name = VideoJS
 
-addon_subpage_readme = Lies mich
+gs_videojs_subpage_index = Startseite
 
-addon_subpage_readme_txt_01 = VIDEO-JS - Lizenz
-addon_subpage_readme_txt_01_01 = Nachfolgend die wichtigen LIZENZBEDINGUNGEN:
-addon_subpage_readme_txt_01_02 = Video.js is a free HTML5 video player created 
-addon_subpage_readme_txt_01_03 = and open-sourced by Steve Heffernan and Zencoder Inc
+gs_videojs_subpage_index_txt_01 = VideoJS 3.2.x
+gs_videojs_subpage_index_txt_01_01 = - In Lies mich finden Sie Details zum PlugIn
+gs_videojs_subpage_index_txt_01_02 = - In Module finden Sie Details zu den REX-Modulen
 
+gs_videojs_subpage_readme = Lies mich
 
+gs_videojs_subpage_readme_txt_01 = VideoJS - eingebundene Dateien
+gs_videojs_subpage_readme_txt_01_01 = Enthält alle wichtigen Komponenten in den aktuellen Versionen:
+gs_videojs_subpage_readme_txt_01_02 = - video-js.css
+gs_videojs_subpage_readme_txt_01_03 = - video.js
+gs_videojs_subpage_readme_txt_01_04 = Alle Dateien sind in .\files\addons\gs_videojs\
 
-addon_subpage_readme_txt_02 = VIDEO-JS - Funktionen
-addon_subpage_readme_txt_02_01 = Alle Funktionen sind direkt im HTML5-Tag anzupassen/ergänzen
-addon_subpage_readme_txt_02_02 = Es müssen keine Scriptanpassungen im Template erfolgen
-addon_subpage_readme_txt_02_03 = Die zahlreichen Paramenter finden Sie auf:
-addon_subpage_readme_txt_02_04 = http://videojs.com/tag-builder/
+gs_videojs_subpage_modul = Module
 
-addon_subpage_readme_txt_03 = Hinweise: Installation/Einbindung des REX_TEMPLATE[1002]
-addon_subpage_readme_txt_03_01 = Für die korrekte Nutzung des Addons ist es notwendig das TEMPLATE mit der ID=1002 in das Standard-Template für den Artikel einzubinden. 
-addon_subpage_readme_txt_03_02 = REX_TEMPLATE[1002] per Copy'n'Paste in das Standard-Template vor dem HEAD-End-Tag einbinden:
-addon_subpage_readme_txt_03_03 = ...
-addon_subpage_readme_txt_03_04 = REX_TEMPLATE[1002] FERTIG!
-addon_subpage_readme_txt_03_05 = <\head>
+gs_videojs_subpage_modul_video = Module (VideoJS)
 
-addon_subpage_readme_txt_04 = Hinweise: Einbindung der video-js.min.css in REX_TEMPLATE[1002]
-addon_subpage_readme_txt_04_01 = Für die korrekte Nutzung des Addons ist es notwendig das TEMPLATE mit der ID=1002 in das Standard-Template für den Artikel einzubinden.
-addon_subpage_readme_txt_04_02 = REX_TEMPLATE[1002] per Copy'n'Paste in das Standard-Template vor dem HEAD-End-Tag einbinden:
-addon_subpage_readme_txt_04_03 = ...
-addon_subpage_readme_txt_04_04 = REX_TEMPLATE[1002]
-addon_subpage_readme_txt_04_05 = <\head>
-
-addon_subpage_textile_video = Module (Film)
-
-addon_subpage_textile_video_txt_01 = Textile Eingabe/Ausgabe (Video-Beispiel)
-addon_subpage_textile_video_txt_01_01 = notextile. <video id="video_1" class="video-js vjs-default-skin" controls  preload="auto" width="480" height="320" poster="my_video_poster.png" data-setup="{}"><source src="my_video.mp4" type="video/mp4"></video> 
-addon_subpage_textile_video_txt_01_02 = Siehe bitte auch: http://videojs.com/#section5
+gs_videojs_subpage_modul_video_txt_01 = Eingabe/Ausgabe (Bild-Beispiel)
+gs_videojs_subpage_modul_video_txt_01_01 = Das aktuelle Beispiel-Modul für dieses Addon finden Sie unter der nachfolgenden Adresse:
+gs_videojs_subpage_modul_video_txt_01_02 = http://www.redaxo.org/165-0-moduldetails.html?module_id=1002
