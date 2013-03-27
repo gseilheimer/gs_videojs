@@ -66,6 +66,8 @@
       // FUNCTIONS
       //////////////////////////////////////////////////////////////////////////////////
 
+      // soon
+      /*
       function gs_videojs_header( $params )
       {
          global $REX;
@@ -83,7 +85,7 @@
          return str_replace('</head>', '</head>', $params['subject']);
       }
       rex_register_extension('OUTPUT_FILTER', 'gs_videojs_header');
-
+      */
    }
 
 ?>
