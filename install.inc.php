@@ -76,6 +76,41 @@
    # $uninstall = dirname(__FILE__) . '/uninstall.sql';
    # rex_install_dump($uninstall);
 
+
+   //////////////////////////////////////////////////////////////////////////////////
+   // UPDATE/INSERT (DB)
+   //////////////////////////////////////////////////////////////////////////////////
+
+   $sql_table = $REX['TABLE_PREFIX']."template";
+
+   $sql = rex_sql::factory();
+   $sql->debugsql = 0; //Ausgabe Query
+   $sql->setQuery("SELECT * FROM $sql_table WHERE name LIKE '%gs : videojs (jquery)%'");
+   $sql_id = $sql->getValue('id');
+   $sql->setTable($sql_table);
+
+   if( $sql->getRows() )
+   {
+      $sql->setWhere('id = '.intval($sql_id));
+      $sql->setValue("content", "<!-- GS:VIDEOJS-START -->\r\n<!--[if lt IE 7]><html class=\"no-js ie6 oldie\" lang=de><![endif]-->\r\n<!--[if IE 7]><html class=\"no-js ie7 oldie\" lang=de><![endif]-->\r\n<!--[if IE 8]><html class=\"no-js ie8 oldie\" lang=de><![endif]-->\r\n<link rel=\"stylesheet\" type=\"text/css\" href=\"./files/addons/gs_videojs/video-js.min.css\" media=\"screen, projection, print\" />\r\n<script type=\"text/javascript\" src=\"./files/addons/gs_videojs/video-js.min.js\"></script>\r\n<!-- GS:VIDEOJS-ENDE -->");
+      $sql->update();
+
+      if ( $sql->update() )
+      {
+         echo 'Zeile mit id '.intval($id).' erfolgreich aktuallisiert.';
+      }
+   }
+   else
+   {
+      $sql->setValue("name", "gs : videojs (jquery)");
+      $sql->setValue("content", "<!-- GS:VIDEOJS-START -->\r\n<!--[if lt IE 7]><html class=\"no-js ie6 oldie\" lang=de><![endif]-->\r\n<!--[if IE 7]><html class=\"no-js ie7 oldie\" lang=de><![endif]-->\r\n<!--[if IE 8]><html class=\"no-js ie8 oldie\" lang=de><![endif]-->\r\n<link rel=\"stylesheet\" type=\"text/css\" href=\"./files/addons/gs_videojs/video-js.min.css\" media=\"screen, projection, print\" />\r\n<script type=\"text/javascript\" src=\"./files/addons/gs_videojs/video-js.min.js\"></script>\r\n<!-- GS:VIDEOJS-ENDE -->");
+      $sql->insert();
+      if ( $sql->insert() )
+      {
+         echo 'Zeile mit id '.intval($id).' erfolgreich eingetragen.';
+      }
+   }
+
    //////////////////////////////////////////////////////////////////////////////////
    // INSTALL
    //////////////////////////////////////////////////////////////////////////////////
