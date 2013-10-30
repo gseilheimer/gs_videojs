@@ -94,7 +94,6 @@
       $sql->setWhere('id = '.intval($sql_id));
       $sql->setValue("content", "<!-- GS:VIDEOJS-START -->\r\n<!--[if lt IE 7]><html class=\"no-js ie6 oldie\" lang=de><![endif]-->\r\n<!--[if IE 7]><html class=\"no-js ie7 oldie\" lang=de><![endif]-->\r\n<!--[if IE 8]><html class=\"no-js ie8 oldie\" lang=de><![endif]-->\r\n<link rel=\"stylesheet\" type=\"text/css\" href=\"./files/addons/gs_videojs/video-js.min.css\" media=\"screen, projection, print\" />\r\n<script type=\"text/javascript\" src=\"./files/addons/gs_videojs/video-js.min.js\"></script>\r\n<!-- GS:VIDEOJS-ENDE -->");
       $sql->update();
-
       if ( $sql->update() )
       {
          echo 'Zeile mit id '.intval($id).' erfolgreich aktuallisiert.';
